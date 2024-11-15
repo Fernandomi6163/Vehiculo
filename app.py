@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://root:root@localhost:5432/vehiculo')
+DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://vehiculos_pmvk_user:Q1FO9JdIExObcFMCzTottMs6z4dYPMLv@dpg-csrke8d6l47c73fggau0-a/vehiculos_pmvk')
 
 def get_db_connection():
     conn = psycopg2.connect(DATABASE_URL)
